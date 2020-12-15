@@ -4,7 +4,6 @@ import 'package:rihamenterprise/view/count_down/components/rounded_input_field.d
 class InputFrom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -24,14 +23,9 @@ class InputFrom extends StatelessWidget {
           Container(
             child: ClipRRect(
               borderRadius: BorderRadius.circular(29),
-              child: FlatButton(
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-                color: Colors.yellow[600],
-                onPressed: () {},
-                child: Text(
-                  'Submit',
-                  style: TextStyle(color: Colors.white),
-                ),
+              child: Text(
+                'Submit',
+                style: TextStyle(color: Colors.white),
               ),
             ),
           ),

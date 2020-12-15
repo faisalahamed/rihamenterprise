@@ -10,8 +10,7 @@ class CountdownTimerPage extends StatefulWidget {
 class _CountdownTimerPageState extends State<CountdownTimerPage> {
   @override
   Widget build(BuildContext context) {
-    int endTime =
-        DateTime.now().millisecondsSinceEpoch + 16 * 24 * 60 * 1000 * 60;
+    int endTime = DateTime(2021, 1, 1).millisecondsSinceEpoch;
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
@@ -29,7 +28,7 @@ class _CountdownTimerPageState extends State<CountdownTimerPage> {
                 minSymbol: Text(' Minuets '),
                 secSymbol: Text(' Sec '),
               ),
-              InputFrom()
+              InputFrom(),
             ],
           ),
         ),
